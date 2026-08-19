@@ -37,7 +37,7 @@ if not sensor.begin(19200):
 # Enroll a fingerprint (2-6 scans; see notes below)
 sensor.add_fingerprint(user_id=1, permission=PermissionLevels.NORMAL, scan_nr=ScanNr.first)
 sensor.add_fingerprint(user_id=1, permission=PermissionLevels.NORMAL, scan_nr=ScanNr.second)
-...optional scans ScanNr.third through ScanNr.fifth...
+# optional scans ScanNr.third through ScanNr.fifth
 sensor.add_fingerprint(user_id=1, permission=PermissionLevels.NORMAL, scan_nr=ScanNr.sixth)
 
 # Match a finger against enrolled users
